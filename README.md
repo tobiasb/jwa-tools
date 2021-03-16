@@ -8,7 +8,7 @@ Note: To run without `pipenv run python ...` you need `pipenv-shebang` installed
 
 ### PEM to JWK
 
-`./jwk.py pem-to-jwk --pretty ~/my-key.rsa.pub`
+`./jwa.py jwk from-pem ~/my-key.rsa.pub`
 
 ```
 {
@@ -17,3 +17,9 @@ Note: To run without `pipenv run python ...` you need `pipenv-shebang` installed
     "kty": "RSA"
 }
 ```
+
+## JWT
+
+### Signed by PEM
+
+`./jwa.py jwt signed-by-pem ~/my-key.rsa`
