@@ -1,3 +1,4 @@
+#!/usr/bin/env pipenv-shebang
 import json
 
 import click
